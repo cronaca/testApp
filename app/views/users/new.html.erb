@@ -1,3 +1,7 @@
+<% if signed_in? %>
+	<p>You can't access this page! You will be redirected to home.</p> 
+	<META HTTP-EQUIV="refresh" CONTENT="1;URL=/">
+<% else %>
 <%= provide(:title, 'Sign up') %>
 <h1>Sign up</h1>
 
@@ -22,3 +26,4 @@
     <% end %>
   </div>
 </div>
+<% end %>
